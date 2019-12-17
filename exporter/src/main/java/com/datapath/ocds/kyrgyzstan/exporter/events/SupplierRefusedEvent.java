@@ -1,0 +1,16 @@
+package com.datapath.ocds.kyrgyzstan.exporter.events;
+
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class SupplierRefusedEvent extends Event {
+
+    private List<Party> parties;
+    private Tender tender;
+    private Bids bids;
+    private List<Award> awards;
+
+
+}
